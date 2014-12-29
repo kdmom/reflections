@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+	
+	It creates the meta data files needed to store different versions of your repository.   This data is stored in a hidden directory .git. 
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	Staging area holds changes before commiting them to the repository.  I think it is useful because you can easily back out changes that you may not want to commit to the repository.
+

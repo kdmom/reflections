@@ -6,3 +6,24 @@ How is the staging area different from the working directory and the repository?
 
 	Staging area holds changes before commiting them to the repository.  I think it is useful because you can easily back out changes that you may not want to commit to the repository.
 
+How can you use the staging area to make sure you have one commit per logical change?
+
+	By doing a git diff --staged.   This command will show you all the differences you are about to commit and if you notice changes that shouldn't be there you can remove them before commiting.  
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Branches would be useful if multiple people are working on different features.  Each person could have their own branch for their change and then merge together when completed.   It is also useful if you have multiple changes, you can logically divide them up into different branches.
+
+How do the diagrams help you visualize the branch structure?
+	
+	The diagrams are much easier to follow than the long IDs which aren't discriptive of what is in them.   A picture is worth a thousand words.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The changes from both branches are merged into 1 end point.   The new branch still has all the changes from both but it can now be referenced by a single name instead of having to remember all the previous  branch names.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Pros: saves time since Git can automatically merge the obvious ones.  
+	Cons: may get a merge that you don't want.
+
